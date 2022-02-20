@@ -1,8 +1,11 @@
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bg-image {
+  display: flex;
+  flex: 1;
   background-image: url("assets/background-image.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +15,7 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .image-container {
@@ -21,16 +24,95 @@ body {
   display: flex;
 }
 
-.form-container {
+.container-top {
   display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content:flex-end;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 50px 400px 30px 100px;
 }
 
-.white {
-  position: absolute;
-  right: 0px;
+.form-container {
   background-color: white;
+  box-shadow: 0 6px 4px -4px lightgrey;
+  padding: 20px 600px 20px 50px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.container-text {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.form-top {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-middle {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-bottom {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.fname-container,
+.lname-container,
+.email-container,
+.pnumber-container,
+.pword-container,
+.pwordconfirm-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.fname-container,
+.email-container,
+.pword-container {
+  padding-right: 20px;
+}
+
+input {
+  min-width: 200px;
+  padding: 0 10px;
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+input:hover {
+  border-color: blue;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.container-bottom {
+  display: flex;
+  flex: 1;
+}
+
+.white-bg {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  background-color: whitesmoke;
   height: 100vh;
-  width: 80vw;
+  width: 70vw;
 }
 
 #bgimage {
