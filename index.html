@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,48 +14,60 @@
 <body>
   
   <div class="container">
-    <div class="bg-image"></div>
+    <div class="bg-image">
+      <div class="logo-container">
+        <img src="assets/odin-lined.png" alt="logo" class='logo'>
+        Odin
+      </div>
+    </div>
     <div class="white-bg">
+      <form action="#" method="post">
       <div class="container-top">
         <p class="top-text">This is not a real online service! You know you need something like this in your life to realize your deepest dreams. <br> Sign up <e>now</e> to get started.</p>
         <p class="bottom-text">You <em>know</em> you want to.</p>
       </div>
       <div class="form-container">
         <div class="container-text">Let's do this!</div>
-        <form action="" method="post">
           <div class="form-top">
             <div class="fname-container">
               <label for="fname">FIRST NAME:</label>
-              <input type="text" name="fname">
+              <input type="text" name="fname" required placeholder=" ">
             </div>
             <div class="lname-container">
               <label for="lname">LAST NAME:</label>
-              <input type="text" name="lname">
+              <input type="text" name="lname" required placeholder=" ">
             </div>
           </div>
           <div class="form-middle">
             <div class="email-container">
               <label for="email">EMAIL:</label>
-              <input type="email" name="email">
+              <input type="email" name="email" required placeholder=" ">
             </div>
             <div class="pnumber-container">
               <label for="pnumber">PHONE NUMBER:</label>
-              <input type="pnumber" name="pnumber">
+              <input type="pnumber" name="pnumber" required placeholder=" ">
             </div>
           </div>
           <div class="form-bottom">
             <div class="pword-container">
               <label for="pword">PASSWORD:</label>
-              <input type="password" name="pword">
+              <input type="password" name="pword" id="pword" required placeholder=" ">
             </div>
             <div class="pwordconfirm-container">
               <label for="pwordconfirm">CONFIRM PASSWORD:</label>
-              <input type="password" name="pwordconfirm">
+              <input type="password" name="pwordconfirm" id="pwordconfirm" required placeholder=" ">
             </div>
+
           </div>
-        </form>
+        
       </div>
-      <div class="container-bottom"></div>
+      <div class="container-bottom">
+        <div class="form-submit">
+          <input type="submit" value="Create Account">
+          <p>Already have an account? <a href="google.com" class="log-in-link">Log in.</a></p>
+        </div>
+      </div>
+      </form>
     </div>
   </div>
 </body>

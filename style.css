@@ -3,14 +3,38 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+@font-face {
+  font-family: 'Odin';
+  src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+
 .bg-image {
   display: flex;
   flex: 1;
-  background-image: url("assets/background-image.jpeg");
+  background-image: url("/assets/background-image.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 40vw;
   height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 175px;
+  padding: 20px 0;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: 'Odin';
+  color: white;
+  font-size: 150px;
+  gap: 10px;
+}
+
+.logo-container .logo {
+  height: 100%;
 }
 
 .container {
@@ -28,10 +52,10 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content:flex-end;
+  justify-content: flex-end;
   font-size: 30px;
   font-weight: bold;
-  padding: 50px 400px 30px 100px;
+  padding: 125px 500px 30px 50px;
 }
 
 .form-container {
@@ -104,6 +128,7 @@ input:hover {
 .container-bottom {
   display: flex;
   flex: 1;
+  padding: 50px 50px;
 }
 
 .white-bg {
@@ -119,4 +144,29 @@ input:hover {
   position: absolute;
   z-index: 0;
   height: 100vh;
+}
+
+.form-submit {
+  font-size: 20px;
+}
+
+input[type=submit] {
+  border-radius: 6px;
+  border: none;
+  color: white;
+  background-color: #689f38;
+  font-size: 20px;
+}
+
+form:invalid:focus {
+  border-color: red;
+}
+
+a {
+  text-decoration: none;
+  color: #689f38;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: red;
 }
